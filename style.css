@@ -1,0 +1,136 @@
+/* =========== Root & reset =========== */
+:root{
+  --bg: #ffffff;            /* light background for document (card-based look) */
+  --page-bg: #0b1220;       /* dark page background */
+  --card: #0f1a25;
+  --muted: #a8bccf;
+  --text: #eef6ff;
+  --accent1: #00d4ff;
+  --accent2: #ff7f50;
+  --glass: rgba(255,255,255,0.03);
+  --radius: 14px;
+  --maxw: 1200px;
+  --gap: 18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: linear-gradient(180deg, #071028 0%, #051020 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  padding:28px 20px;
+}
+
+/* wrapper */
+.wrap{max-width:var(--maxw);margin:0 auto}
+
+/* header */
+.site-header{margin-bottom:18px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:14px;box-shadow:0 18px 40px rgba(2,6,23,0.5)}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{font-weight:800;padding:12px 14px;border-radius:10px;background:linear-gradient(135deg,var(--accent1),var(--accent2));color:#031022}
+.main-nav a{color:var(--muted);text-decoration:none;margin-left:12px;font-weight:600}
+.main-nav a:hover{color:var(--text)}
+.header-actions .btn{padding:8px 12px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn{display:inline-block}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.btn.primary{background:linear-gradient(90deg,var(--accent1),#6f7cff);color:#031022;padding:9px 14px;border-radius:10px;border:none}
+
+/* HERO */
+.hero{margin-top:18px}
+.hero-inner{display:grid;grid-template-columns:1fr 460px;gap:28px;align-items:center;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:14px;box-shadow:0 24px 60px rgba(2,6,23,0.6)}
+.hero-left{max-width:720px}
+.hero-left h1{font-size:2.2rem;line-height:1.05;margin-bottom:12px}
+.accent{background:linear-gradient(90deg,var(--accent1),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+.lead{color:var(--muted);margin-bottom:16px}
+
+/* Search bar */
+.search-bar{display:flex;gap:10px;align-items:center;margin-bottom:14px}
+.search-bar input, .search-bar select{
+  flex:1;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)
+}
+.search-bar .btn{padding:10px 14px;border-radius:10px}
+
+/* hero stats */
+.hero-stats{display:flex;gap:18px;margin-top:10px}
+.hero-stats div{display:flex;flex-direction:column}
+.hero-stats strong{font-size:1.05rem}
+
+/* HERO RIGHT PHONE MOCK */
+.hero-right{display:flex;justify-content:center}
+.phone-mock{width:320px;height:420px;border-radius:18px;overflow:hidden;background:linear-gradient(180deg,#0b1520,#031020);display:grid;place-items:center;border:1px solid rgba(255,255,255,0.04)}
+.phone-mock img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* SECTION style */
+.section{padding:28px 0}
+.section-title{font-size:1.4rem;margin-bottom:6px}
+.muted{color:var(--muted);margin-bottom:12px;}
+
+/* CATEGORY GRID */
+.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:12px}
+.cat-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:12px;border-radius:12px;display:flex;flex-direction:column;gap:10px;align-items:start}
+.cat-card img{width:100%;height:130px;object-fit:cover;border-radius:10px;display:block}
+.cat-card h3{margin:0}
+.cat-card p{color:var(--muted);font-size:0.95rem}
+
+/* RESTAURANTS GRID */
+.restaurant-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px}
+.restaurant-card{display:flex;gap:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:12px;border-radius:12px;align-items:center}
+.restaurant-card img{width:120px;height:80px;object-fit:cover;border-radius:10px}
+.rc-body h3{margin:0}
+.rc-body p{color:var(--muted);font-size:0.95rem;margin:6px 0}
+.rc-meta{display:flex;gap:8px;margin-top:6px}
+.pill{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-weight:700;font-size:0.85rem}
+
+/* OFFERS */
+.offers-row{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+.promo-card{flex:1;min-width:220px;padding:18px;border-radius:12px;background:linear-gradient(90deg, rgba(0,212,255,0.06), rgba(255,127,80,0.04));border:1px solid rgba(255,255,255,0.03)}
+.promo-card h3{margin:0}
+.promo-card p{color:var(--muted)}
+
+/* TESTIMONIALS */
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.testimonial{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:16px;border-radius:12px;font-style:normal}
+.testimonial p{margin:0;color:var(--text);line-height:1.45}
+.testimonial cite{display:block;margin-top:8px;color:var(--muted);font-size:0.9rem}
+
+/* APP DOWNLOAD */
+.app-download .download-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);border-radius:12px}
+.store-links{display:flex;gap:12px;margin-top:10px}
+.store-btn{display:inline-flex;gap:8px;align-items:center;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,0.03);color:var(--text);text-decoration:none}
+.app-phone img{width:220px;height:120px;object-fit:cover;border-radius:10px}
+
+/* FOOTER */
+.site-footer{margin-top:28px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:12px}
+.footer-nav a{color:var(--muted);margin-left:12px;text-decoration:none}
+
+/* HOVER & TRANSITIONS */
+a,button{transition:all .18s ease-in-out}
+.cat-card:hover, .restaurant-card:hover, .promo-card:hover, .testimonial:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(2,6,23,0.45)}
+.cat-card img{transition:transform .25s ease}
+.cat-card:hover img{transform:scale(1.05)}
+
+/* RESPONSIVE */
+@media (max-width:1100px){
+  .hero-inner{grid-template-columns:1fr 360px}
+  .category-grid{grid-template-columns:repeat(3,1fr)}
+  .restaurant-grid{grid-template-columns:repeat(2,1fr)}
+  .testimonial-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:780px){
+  .header-inner{flex-direction:column;gap:12px;align-items:flex-start}
+  .hero-inner{grid-template-columns:1fr;gap:18px}
+  .phone-mock{width:260px;height:360px}
+  .category-grid{grid-template-columns:repeat(2,1fr)}
+  .restaurant-grid{grid-template-columns:1fr}
+  .testimonial-grid{grid-template-columns:1fr}
+  .download-inner{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:420px){
+  .wrap{padding:0 10px}
+  .hero-left h1{font-size:1.6rem}
+  .hero-stats{flex-direction:column;gap:8px}
+  .category-grid{grid-template-columns:1fr}
+}
