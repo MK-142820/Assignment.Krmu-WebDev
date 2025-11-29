@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foodie — Food Delivery Landing</title>
+  <meta name="description" content="Foodie — sample food delivery landing page built with HTML & CSS (Flexbox + Grid).">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <div class="logo">Foodie</div>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#categories">Categories</a>
+          <a href="#restaurants">Restaurants</a>
+          <a href="#offers">Offers</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="header-actions">
+        <a href="#" class="btn ghost">Login</a>
+        <a href="#" class="btn primary">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-left">
+        <h1>Delicious food, <span class="accent">delivered fast</span></h1>
+        <p class="lead">Explore restaurants near you, discover trending dishes, and get great offers. Hot & fresh to your door.</p>
+
+        <!-- search / order bar -->
+        <form class="search-bar" action="#" method="get" aria-label="Search restaurants">
+          <input type="text" name="location" placeholder="Enter your location or pincode" required>
+          <select name="category" aria-label="Category">
+            <option value="">All categories</option>
+            <option>Pizza</option>
+            <option>Burgers</option>
+            <option>Sushi</option>
+            <option>Indian</option>
+          </select>
+          <button class="btn primary" type="submit">Find Food</button>
+        </form>
+
+        <div class="hero-stats">
+          <div><strong>500+</strong><span>Restaurants</span></div>
+          <div><strong>20k+</strong><span>Orders/day</span></div>
+          <div><strong>4.8</strong><span>Avg rating</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="phone-mock">
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7fa1d64c0f8b6b7b498f5c6ac7f0f0a6" alt="Food sample">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES (GRID) -->
+  <section id="categories" class="wrap section">
+    <h2 class="section-title">Browse by Category</h2>
+    <p class="muted">Find food items by category. Tap any card to explore restaurants.</p>
+
+    <div class="category-grid">
+      <article class="cat-card">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=f6f9aa4dcd5b8a2a2d328a0d3c1b2e52" alt="Pizza">
+        <h3>Pizza</h3>
+        <p class="muted">Oven-baked pizzas & combos.</p>
+      </article>
+
+      <article class="cat-card">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a6e4bb0404a6f1b2d4caa2f6c9e3c2f" alt="Burgers">
+        <h3>Burgers</h3>
+        <p class="muted">Classic & gourmet burgers.</p>
+      </article>
+
+      <article class="cat-card">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5b7b1f5a6b9a7d0f6a2b3b9c2b7e2a0a" alt="Sushi">
+        <h3>Sushi</h3>
+        <p class="muted">Fresh sushi & sashimi.</p>
+      </article>
+
+      <article class="cat-card">
+        <img src="https://images.unsplash.com/photo-1598515213694-1d1b7b9a3f3c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=8b1a2a1b3a8f2d9f9f2a3b1c4d5e6f7a" alt="Indian">
+        <h3>Indian</h3>
+        <p class="muted">Regional curries & thalis.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FEATURED RESTAURANTS -->
+  <section id="restaurants" class="wrap section">
+    <h2 class="section-title">Featured Restaurants</h2>
+    <p class="muted">Top rated picks in your area.</p>
+
+    <div class="restaurant-grid">
+      <article class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1544511916-0148ccdeb877?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7c7b45f6b2176b3a6f4c2d8e9a6b7c3d" alt="Restaurant 1">
+        <div class="rc-body">
+          <h3>La Pizza House</h3>
+          <p class="muted">Italian • 30-40 mins • ₹250 min</p>
+          <div class="rc-meta">
+            <span class="pill">4.7 ★</span>
+            <span class="pill">20-30 mins</span>
+            <span class="pill">₹120 for two</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7fa1d64c0f8b6b7b498f5c6ac7f0f0a6" alt="Restaurant 2">
+        <div class="rc-body">
+          <h3>Burger Barn</h3>
+          <p class="muted">Burgers • 25-35 mins • ₹200 min</p>
+          <div class="rc-meta">
+            <span class="pill">4.5 ★</span>
+            <span class="pill">25-35 mins</span>
+            <span class="pill">₹150 for two</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2c7f0b8c4d7f8a2e1b3c4d5e6f7a8b9c" alt="Restaurant 3">
+        <div class="rc-body">
+          <h3>Sushi Point</h3>
+          <p class="muted">Sushi • 40-50 mins • ₹350 min</p>
+          <div class="rc-meta">
+            <span class="pill">4.8 ★</span>
+            <span class="pill">35-45 mins</span>
+            <span class="pill">₹250 for two</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROMO / OFFERS -->
+  <section id="offers" class="wrap section">
+    <h2 class="section-title">Offers & Promos</h2>
+    <p class="muted">Grab limited-time discounts & combo deals.</p>
+
+    <div class="offers-row">
+      <div class="promo-card">
+        <h3>Flat 30% off</h3>
+        <p class="muted">On orders above ₹299 • Use code: FOODIE30</p>
+      </div>
+
+      <div class="promo-card">
+        <h3>Buy 1 Get 1</h3>
+        <p class="muted">Selected burgers & pizzas • Today only</p>
+      </div>
+
+      <div class="promo-card">
+        <h3>Free Delivery</h3>
+        <p class="muted">For first 3 orders after signup</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="wrap section">
+    <h2 class="section-title">Customer Reviews</h2>
+    <div class="testimonial-grid">
+      <blockquote class="testimonial">
+        <p>“Amazing food and quick delivery. The pizza was still piping hot!”</p>
+        <cite>— Priya, 4 orders</cite>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <p>“Great deals and friendly packaging. Loved the sushi platter.”</p>
+        <cite>— Rohit, 2 orders</cite>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <p>“App is easy to use and restaurants are reliable. Highly recommended.”</p>
+        <cite>— Ananya, 6 orders</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- APP DOWNLOAD -->
+  <section class="wrap section app-download">
+    <div class="download-inner">
+      <div>
+        <h2>Get the Foodie App</h2>
+        <p class="muted">Order on the go — download on Play Store or App Store.</p>
+        <div class="store-links">
+          <a class="store-btn" href="#"><img alt="google-play" src="https://img.icons8.com/ios-filled/24/000000/google-play.png"> Google Play</a>
+          <a class="store-btn" href="#"><img alt="app-store" src="https://img.icons8.com/ios-filled/24/000000/apple-app-store.png"> App Store</a>
+        </div>
+      </div>
+
+      <div class="app-phone">
+        <img src="https://images.unsplash.com/photo-1523475496153-3d6ccf0b7ae9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b2b1d9f3c0a7a5c6b1d2a3b4c5d6e7f" alt="app phone">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="foot-left">
+        <div class="logo small">Foodie</div>
+        <p class="muted small">© 2025 Foodie — Delivery Service</p>
+      </div>
+      <div class="foot-right">
+        <nav class="footer-nav">
+          <a href="#">About</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
